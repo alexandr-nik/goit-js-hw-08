@@ -35,7 +35,8 @@ testLocalStorage();
 refs.formEl.addEventListener('input', throttle(onInputForm, 500));
 refs.formEl.addEventListener('submit', onSubmitForm);
 function onInputForm(e) {
-  form[e.target.name] = e.target.value;
+form.email = refs.inputEl.value;
+form.message = refs.messageEl.value;
   localStorage.setItem('feedback-form-state', JSON.stringify(form));
 }
 function onSubmitForm(e) {
