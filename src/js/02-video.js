@@ -22,6 +22,9 @@ player.on(
   }, 2000)
 );
 
+
+
+
 function setCurrentTimeOnLocalStorage() {
   if (!localStorage.getItem('videoplayer-current-time')) {
     localStorage.setItem('videoplayer-current-time', 0);
